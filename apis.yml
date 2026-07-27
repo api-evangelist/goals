@@ -1,7 +1,26 @@
 aid: goals
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/goals.png
 name: Goals
-description: 'Goals is a company surfaced as a portfolio company of northzone and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Goals (playgoals.com, formerly goals.co) is a free-to-play competitive
+  football (soccer) video game studio backed by Northzone. It positions itself as a
+  gameplay-first football game — "No scripts, no excuses, just football" — with fast,
+  skill-based competitive matches, unique player squads, card-pack collection, ranked
+  leaderboards, and multiple game modes across Steam, Xbox, PlayStation, and the Epic
+  Games Store. A companion app lets players manage squads and open packs. This profile
+  was surfaced as a Northzone portfolio company (consumer sector) and added to the
+  API Evangelist network; the studio publishes a consumer game and a community
+  surface (Discord, guides, leaderboards) but no public developer API.'
 url: https://raw.githubusercontent.com/api-evangelist/goals/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Gaming
+- Video Game
+- Football
+- Esports
+- Sports
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/goals-domain-security.yml
 - type: Website
-  url: https://goals.co
+  url: https://playgoals.com/
+- type: Documentation
+  url: https://playgoals.com/en/stats-guide
+- type: GettingStarted
+  url: https://playgoals.com/en/first-steps
+- type: Support
+  url: https://playgoals.com/en/contact
+- type: Community
+  url: https://discord.com/invite/goals
+- type: PrivacyPolicy
+  url: https://playgoals.com/en/privacy-policy
+- type: TermsOfService
+  url: https://playgoals.com/en/eula
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
